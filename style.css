@@ -36,16 +36,16 @@ body {
     border-top-right-radius: 100%;
 }
 
-.blue {
-    grid-area: blue;
-    background-color: #0bf;
-    border-bottom-right-radius: 100%;
-}
-
 .yellow {
     grid-area: yellow;
     background-color: #ff0;
     border-bottom-left-radius: 100%;
+}
+
+.blue {
+    grid-area: blue;
+    background-color: #0bf;
+    border-bottom-right-radius: 100%;
 }
 
 .selected {
