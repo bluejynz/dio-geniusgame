@@ -26,7 +26,6 @@ let newLevel = async () => {
     playersTurn = false;
     updateScoreText();
     genSequence[genSequence.length] = Math.floor(Math.random() * 4);
-    console.log(genSequence);
     clickedSequence = [];
 
     await sleep(800);
@@ -39,16 +38,12 @@ let newLevel = async () => {
 
 let testColor = (color) => {
     if(color == 0) {
-        console.log("verdao");
         return green;
     } else if(color == 1) {
-        console.log("vermelhor");
         return red;
     } else if(color == 2) {
-        console.log("amarelin");
         return yellow;
     } else if(color == 3) {
-        console.log("zulzin");
         return blue;
     }
 }
