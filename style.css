@@ -1,53 +1,86 @@
-/* #1d3557 #457b9d #a8dadc #f1faee */
-
 body {
     margin: 0;
-    background-color: #1d3557;
-}
-
-.main-game {
+    padding: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 16px;
     height: 100vh;
     width: 100vw;
+    background-color: #1d3557;
+    color: #f1faee;
+    text-align: center;
+}
+
+button {
+    background-color: transparent;
+    color: #f1faee;
+    border: 2px solid #f1faee;
+    border-radius: 5px;
+    width: 100px;
+    padding: 10px;
+    margin-top: 20px;
+    font-weight: bold;
+    font-size: 14px;
+    transition: .3s ease;
+}
+
+button:hover {
+    background-color: #f1faee;
+    color: #1d3557;
+}
+
+.genius {
     display: flex;
+    justify-content: center;
+}
+
+.game {
+    background-color: #f1faee;
+    height: 450px;
+    width: 450px;
+    border-radius: 100%;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-.genius {
-    display: grid;
-    grid-template-areas: 'green red' 'yellow blue';
-    grid-gap: 10px;
-    border: 1px solid #f1faee;
-    background-color: #f1faee;
-    border-radius: 100%;
-    width: 700px;
-    height: 700px;
+.row {
+    display: flex;
+}
+
+.col {
+    height: 200px;
+    width: 200px;
 }
 
 .green {
-    grid-area: green;
-    background-color: #0b0;
     border-top-left-radius: 100%;
+    background-color: #0b0;
+    box-shadow: inset -3px -3px 3px #0002, inset 3px 3px 3px #0002;
+    margin: 4px;
 }
 
 .red {
-    grid-area: red;
-    background-color: #f00;
     border-top-right-radius: 100%;
+    background-color: #f00;
+    box-shadow: inset 3px -3px 3px #0002, inset -3px 3px 3px #0002;
+    margin: 4px;
 }
 
 .yellow {
-    grid-area: yellow;
-    background-color: #ff0;
     border-bottom-left-radius: 100%;
+    background-color: #ff0;
+    box-shadow: inset -3px 3px 3px #0002, inset 3px -3px 3px #0002;
+    margin: 4px;
 }
 
 .blue {
-    grid-area: blue;
-    background-color: #0bf;
     border-bottom-right-radius: 100%;
+    background-color: #0bf;
+    box-shadow: inset 3px 3px 3px #0002, inset -3px -3px 3px #0002;
+    margin: 4px;
 }
 
 .selected {
-    opacity: .8;
+    opacity: .4;
 }

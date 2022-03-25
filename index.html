@@ -8,15 +8,20 @@
     <title>Genius Game</title>
 </head>
 <body>
-
-    <div class="main-game">
-        <div class="genius">
-            <div class="green"></div>
-            <div class="red"></div>
-            <div class="yellow"></div>
-            <div class="blue"></div>
+    <h1>Score: </h1>
+    <div class="genius">
+        <div class="game">
+            <div class="row">
+                <div onclick="toggleOpacity(this)" class="col green"></div>
+                <div onclick="toggleOpacity(this)" class="col red"></div>
+            </div>
+            <div class="row">
+                <div onclick="toggleOpacity(this)" class="col yellow"></div>
+                <div onclick="toggleOpacity(this)" class="col blue"></div>
+            </div>
         </div>
     </div>
+    <button>Start</button>
     
 </body>
 <script src="./script.js"></script>
