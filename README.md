@@ -2,6 +2,6 @@
 
 ### Jogo estilo genius feito utilizando HTML, CSS e Javascript.
 
-!["screenshot"](https://github.com/bluejynz/dio-geniusgame/blob/tentando-sozinha/genius.png?raw=true)
+!["screenshot"](https://github.com/bluejynz/dio-geniusgame/blob/main/genius.png?raw=true)
 
 ##### Bootcamp Web Games Developer da DIO
